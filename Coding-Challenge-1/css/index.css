@@ -1,0 +1,53 @@
+.js-search-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.js-search-form button,
+input {
+  width: 30%;
+  padding: 7px;
+  margin: 5px 0;
+}
+
+.js-search-form input {
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 5px;
+}
+
+.js-search-form input:focus {
+  outline: none;
+}
+
+.js-search-form button {
+  border: 1px solid rgb(39, 233, 159);
+  background-color: rgb(82, 241, 162);
+  border-radius: 5px;
+}
+
+.js-search-form button:hover {
+  background-color: rgb(36, 189, 112);
+  cursor: pointer;
+}
+
+h1 {
+  text-align: center;
+}
+
+.meal-item {
+  border: 1px solid rgb(214, 214, 214);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.meal-item ul {
+  list-style: none;
+}
+
+.meal-name {
+  text-align: center;
+  font-weight: 600;
+}

@@ -31,11 +31,11 @@ function fetchMeals(event) {
       results.innerHTML = "";
       for (let meal of data.meals) {
         results.innerHTML += `
-        <div>
+        <div class="meal-item">
           <ul>
-            <li>Name: ${meal.strMeal}</li>
-            <li>Meal area: ${meal.strArea}</li>
-            <li>Instructions: </li>
+            <li class="meal-name">${meal.strMeal}</li>
+            <li class="meal-name">Meal area: ${meal.strArea}</li>
+            <li class="meal-name">Instructions </li>
             <li>${meal.strInstructions}</li>
             <li>Meal's picture: <img src="${meal.strMealThumb}" alt="meal-photo" /></li>
           </ul>
