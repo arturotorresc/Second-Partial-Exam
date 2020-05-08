@@ -1,8 +1,22 @@
-const mongoose = require( 'mongoose' );
-const uuid = require( 'uuid' );
+const mongoose = require("mongoose");
 
 /* Your code goes here */
 
-module.exports = {
-    
-};
+const { Schema } = mongoose;
+
+const sportModelSchema = new Schema(
+  {
+    id: String,
+    name: {
+      type: String,
+    },
+    num_players: Number,
+  },
+  {
+    timestamps: true,
+  }
+);
+
+const Sport = mongoose.model("Sport", sportModelSchema);
+
+module.exports = Sport;
